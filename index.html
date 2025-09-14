@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vedant Patil — Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
+
+      <!-- Brand -->
       <div class="brand">
         <h1>Vedant Patil</h1>
         <p class="sub">B.Tech CSE — AI & Edge Computing</p>
       </div>
+
+      <!-- Profile Image at Top Right -->
+      <div class="profile-img">
+        <img src="images/profile.jpg" alt="Vedant Patil">
+      </div>
+
+      <!-- Navigation -->
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
@@ -21,17 +32,18 @@
         <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <main>
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
           <h2>Hi — I'm Vedant 👋</h2>
           <p class="lead">
-            Aspiring AI/ML Engineer passionate about IoT, Edge Computing & Cloud.
+            Aspiring AI/ML Engineer passionate about IoT, Edge Computing & Cloud. 
             Building practical projects: web apps (Django), embedded IoT systems, and gesture-based automation.
           </p>
           <p class="cta-row">
@@ -39,54 +51,20 @@
             <a class="btn ghost" href="contact.html">Contact Me</a>
           </p>
         </div>
-
-        <aside class="hero-card">
-          <h3>Quick info</h3>
-          <ul>
-            <li><strong>Education:</strong> B.Tech CSE — MIT ADT University (CGPA 7.22)</li>
-            <li><strong>Location:</strong> Pune / Nashik, India</li>
-            <li><strong>Email:</strong> <a href="mailto:vedantrpatil701@gmail.com">vedantrpatil701@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+919175802234">+91-9175802234</a></li>
-          </ul>
-        </aside>
       </div>
-    </section>
-
-    <section class="highlights container">
-      <article class="card">
-        <h4>MiniShopee</h4>
-        <p>Full-stack e-commerce website using Django (Python) + HTML/CSS/JS. Implemented core product, cart & checkout flows.</p>
-      </article>
-
-      <article class="card">
-        <h4>Smart Indoor Air Quality Sensor</h4>
-        <p>ESP32-based real-time IAQ monitoring system with cloud dashboard for CO₂, temperature, and humidity data visualization.</p>
-      </article>
-
-      <article class="card">
-        <h4>Smart Home Automation</h4>
-        <p>Gesture-based automation using Arduino Nano 33 BLE Sense accelerometer for controlling lights and appliances.</p>
-      </article>
-
-      <article class="card">
-        <h4>Women Safety App (SIH)</h4>
-        <p>Prototype developed during Smart India Hackathon — safety features, alerts, and location sharing concept.</p>
-      </article>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Vedant Patil — B.Tech CSE. • Email: <a href="mailto:vedantrpatil701@gmail.com">vedantrpatil701@gmail.com</a></p>
+      <p>© <span id="year"></span> Vedant Patil — B.Tech CSE</p>
     </div>
   </footer>
 
   <script>
-    // small script for year and nav toggle
     document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
   </script>
+
 </body>
 </html>
