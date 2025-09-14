@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills — Vedant Patil</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Vedant Patil</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Skills</h2>
+
+    <section class="skills-grid">
+      <div class="skill">
+        <h4>Languages</h4>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill">
+        <h4>Web & Frameworks</h4>
+        <ul>
+          <li>CSS</li>
+          <li>Django (basic)</li>
+        </ul>
+      </div>
+
+      <div class="skill">
+        <h4>Tools</h4>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Figma, Canva</li>
+        </ul>
+      </div>
+
+      <div class="skill">
+        <h4>Coursework & Topics</h4>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>DBMS, AI, IoT, Edge Computing, Cloud</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Vedant Patil</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

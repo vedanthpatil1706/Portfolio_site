@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Vedant Patil</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Vedant Patil</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p>Email: <a href="mailto:vedantrpatil701@gmail.com">vedantrpatil701@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919175802234">+91-9175802234</a></p>
+        <p>Location: Pune / Nashik, India</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Quick message</h3>
+        <!-- Simple mailto contact (replace with form backend later if desired) -->
+        <form action="mailto:vedantrpatil701@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message" rows="5" placeholder="Write a short message"></textarea>
+          <button class="btn" type="submit">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> Vedant Patil</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>

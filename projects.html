@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Vedant Patil</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Vedant Patil</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Projects</h2>
+    <section class="projects-grid">
+      <article class="project">
+        <h3>MiniShopee</h3>
+        <p><strong>Stack:</strong> Django (Python), HTML, CSS, JavaScript</p>
+        <p>Developed an e-commerce prototype with product listing, cart, and checkout flows. Backend implemented in Django with database integration.</p>
+      </article>
+
+      <article class="project">
+        <h3>Smart Indoor Air Quality Sensor</h3>
+        <p><strong>Stack:</strong> ESP32, Sensors, Cloud dashboard</p>
+        <p>Real-time indoor air quality monitoring using ESP32. Data (CO₂, temperature, humidity) is sent to the cloud for visualization in a web/mobile dashboard.</p>
+      </article>
+
+      <article class="project">
+        <h3>Smart Home Automation (Gesture)</h3>
+        <p><strong>Stack:</strong> Arduino Nano 33 BLE Sense (accelerometer)</p>
+        <p>Implemented gesture-based controls for home appliances (swipe/rotate/fist gestures) using onboard sensors and mapping gestures to device actions.</p>
+      </article>
+
+      <article class="project">
+        <h3>Women Safety App (Smart India Hackathon)</h3>
+        <p><strong>Role:</strong> Team participant</p>
+        <p>Contributed to design and prototype of a women-safety mobile/web application including alerting features and location sharing.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Vedant Patil</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

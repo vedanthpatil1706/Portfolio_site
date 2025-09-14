@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Vedant Patil</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Vedant Patil</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Passionate college student pursuing B.Tech in Computer Science (Specialization in AI & Edge Computing) at
+        MIT ADT University. I enjoy building real-world systems that combine embedded hardware, cloud services, and
+        machine learning. I'm actively learning and applying tools like Django, ESP32, Arduino Nano 33 BLE Sense, and cloud platforms.
+      </p>
+
+      <h3>Education</h3>
+      <ul class="education">
+        <li><strong>MIT ADT University, Pune</strong> — B.Tech CSE (AI & Edge Computing), CGPA: 7.22 / 10 (2022–2026)</li>
+        <li><strong>Matoshri College Of Engineering, Nashik</strong> — HSC, 73.17%</li>
+        <li><strong>Rangubai Junnare English Medium High School, Nashik</strong> — SSC, 84%</li>
+      </ul>
+
+      <h3>Summary</h3>
+      <p>
+        I aim to use my coursework and self-study to contribute to internships or roles in AI/ML, IoT, or cloud engineering
+        and I’m excited to learn on-the-job from industry teams.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Vedant Patil • <a href="mailto:vedantrpatil701@gmail.com">vedantrpatil701@gmail.com</a></p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
