@@ -507,3 +507,135 @@ select:focus {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* =================================
+   PROJECTS PAGE DESIGN
+================================= */
+
+.projects-intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.project {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  min-width: 0;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-light);
+}
+
+.project h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.project h4 {
+  color: var(--dark);
+  font-size: 1.05rem;
+  margin: 22px 0 8px;
+}
+
+.project p {
+  color: var(--text);
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.project ul {
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.project li {
+  margin-bottom: 12px;
+}
+
+.featured-project {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(135deg, #ffffff, #f5f3ff, #effaff);
+  border: 1px solid #c4b5fd;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-badge {
+  display: inline-block;
+  padding: 9px 15px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #5145e5, #9333ea);
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.project-tagline {
+  color: var(--primary) !important;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.project-tags span {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 30px;
+  background: #ecebff;
+  color: #5145e5;
+  border: 1px solid #d8d4ff;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.project-highlight {
+  padding: 15px;
+  margin-top: 20px !important;
+  background: #eeeaff;
+  border-left: 4px solid var(--primary);
+  border-radius: 9px;
+  font-weight: 650;
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project {
+    grid-column: auto;
+  }
+
+  .project {
+    padding: 21px;
+  }
+
+  .project-badge {
+    line-height: 1.6;
+  }
+}
