@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,13 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand"><h1>Vedant Patil</h1></div>
+      <div class="brand">
+        <h1>Vedant Patil</h1>
+      </div>
+
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -18,45 +23,274 @@
         <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
       </nav>
+
       <button class="nav-toggle" aria-label="toggle navigation">☰</button>
     </div>
   </header>
 
   <main class="container">
-    <h2>Projects</h2>
+
+    <h2>🚀 My Projects</h2>
+    <p class="projects-intro">
+      Exploring Artificial Intelligence, Data Science, Machine Learning,
+      and innovative technology to solve real-world problems.
+    </p>
+
     <section class="projects-grid">
-      <article class="project">
-        <h3>MiniShopee</h3>
-        <p><strong>Stack:</strong> Django (Python), HTML, CSS, JavaScript</p>
-        <p>Developed an e-commerce prototype with product listing, cart, and checkout flows. Backend implemented in Django with database integration.</p>
+
+      <!-- PROJECT 1: ARTIFY AI -->
+      <article class="project featured-project">
+
+        <div class="project-badge">
+          🏆 3rd Runner-Up | Google Cloud Gen AI Exchange Hackathon 2025
+        </div>
+
+        <h3>🎨 Artify AI — AI-Powered Marketplace Assistant for Local Artisans</h3>
+
+        <p class="project-tagline">
+          Empowering Traditional Craftsmanship through Generative AI
+          and Data Intelligence.
+        </p>
+
+        <h4>🧩 Problem Statement</h4>
+        <p>
+          Local artisans often struggle to market their crafts, communicate
+          their cultural stories, and reach wider digital audiences.
+          Limited access to marketing resources and market insights makes
+          sustainable business growth challenging.
+        </p>
+
+        <h4>💡 Proposed Solution</h4>
+        <p>
+          Artify AI is an AI-powered marketplace assistant designed to
+          help local artisans showcase their creativity, generate
+          compelling product stories, understand market trends, and
+          strengthen their digital presence.
+        </p>
+
+        <h4>🌟 Key Features</h4>
+        <ul>
+          <li>✍️ <strong>AI Story Generator:</strong> Generates authentic product stories and digital provenance cards using Gemini AI.</li>
+          <li>📈 <strong>Trend Finder:</strong> Identifies trending keywords, hashtags, SEO opportunities, and market trends.</li>
+          <li>🌱 <strong>Craft Score:</strong> Evaluates sustainability, material costs, energy usage, and pricing recommendations.</li>
+          <li>📊 <strong>Market Demand Analysis:</strong> Provides market insights, product demand predictions, and growth opportunities.</li>
+          <li>📢 <strong>Ad Creatives Generator:</strong> Creates promotional content and marketing ideas for social media and e-commerce platforms.</li>
+          <li>📚 <strong>My Library:</strong> Stores generated stories, creative content, and AI-powered insights.</li>
+        </ul>
+
+        <h4>🧠 Technology Stack</h4>
+        <div class="project-tags">
+          <span>Next.js</span>
+          <span>React</span>
+          <span>Tailwind CSS</span>
+          <span>Firebase</span>
+          <span>Gemini Flash 2.5</span>
+          <span>Cohere Command R+</span>
+          <span>Chart.js</span>
+          <span>D3.js</span>
+          <span>Git & GitHub</span>
+        </div>
+
+        <h4>🌍 Impact & Innovation</h4>
+        <p>
+          Combines Generative AI, data analytics, and sustainability
+          intelligence to support traditional artisans, preserve
+          cultural craftsmanship, encourage eco-friendly practices,
+          and create digital market opportunities.
+        </p>
+
+        <p class="project-highlight">
+          🏆 Achievement: Secured 3rd Runner-Up position in the
+          Student Track at Google Cloud Gen AI Exchange Hackathon 2025.
+        </p>
+
       </article>
 
-      <article class="project">
-        <h3>Smart Indoor Air Quality Sensor</h3>
-        <p><strong>Stack:</strong> ESP32, Sensors, Cloud dashboard</p>
-        <p>Real-time indoor air quality monitoring using ESP32. Data (CO₂, temperature, humidity) is sent to the cloud for visualization in a web/mobile dashboard.</p>
+
+      <!-- PROJECT 2: PUBLIC TRANSPORT DELAY PREDICTION -->
+      <article class="project featured-project">
+
+        <div class="project-badge">
+          🚌 Data Science | Machine Learning | Regression
+        </div>
+
+        <h3>🚌 Public Transport Delay Prediction Using Weather & Events</h3>
+
+        <p class="project-tagline">
+          Analysing transport delays through weather, traffic,
+          events, and scheduling data.
+        </p>
+
+        <h4>🎯 Project Overview</h4>
+        <p>
+          Developed a data science and machine learning project to
+          explore public transport arrival delays using weather
+          conditions, traffic congestion, event information,
+          transport types, and scheduling data.
+          The objective was to identify patterns and build
+          regression models to predict arrival delays.
+        </p>
+
+        <h4>📊 Dataset</h4>
+        <ul>
+          <li>📌 Total Records: 2,000</li>
+          <li>📌 Original Features: 24</li>
+          <li>🎯 Target Variable: <code>actual_arrival_delay_min</code></li>
+          <li>📂 Source: Kaggle public transport delay dataset</li>
+        </ul>
+
+        <p>
+          🔗 <a href="https://www.kaggle.com/datasets/khushikyad001/public-transport-delays-with-weather-and-events"
+             target="_blank" rel="noopener noreferrer">
+             View Dataset on Kaggle
+          </a>
+        </p>
+
+        <h4>⚙️ Project Workflow</h4>
+        <ul>
+          <li>1️⃣ Data loading and understanding</li>
+          <li>2️⃣ Data cleaning and preprocessing</li>
+          <li>3️⃣ Exploratory Data Analysis (EDA)</li>
+          <li>4️⃣ Feature engineering</li>
+          <li>5️⃣ Train-test splitting</li>
+          <li>6️⃣ Regression model development</li>
+          <li>7️⃣ Model evaluation and comparison</li>
+        </ul>
+
+        <h4>🤖 Machine Learning Models</h4>
+        <div class="project-tags">
+          <span>Linear Regression</span>
+          <span>Random Forest</span>
+          <span>XGBoost</span>
+          <span>Gradient Boosting</span>
+          <span>Mean Baseline</span>
+        </div>
+
+        <h4>📈 Model Evaluation (MAE)</h4>
+        <div class="project-tags">
+          <span>Mean Baseline: 8.212</span>
+          <span>Random Forest: 8.237</span>
+          <span>XGBoost: 8.263</span>
+          <span>Gradient Boosting: 8.314</span>
+          <span>Linear Regression: 8.418</span>
+        </div>
+
+        <h4>🔍 Key Findings</h4>
+        <ul>
+          <li>Numerical correlations with the target were generally close to zero.</li>
+          <li>The available features showed weak predictive relationships with arrival delays.</li>
+          <li>None of the trained machine learning models outperformed the mean baseline.</li>
+          <li>The results highlighted the importance of data quality and feature relevance.</li>
+        </ul>
+
+        <p class="project-highlight">
+          💡 Key Learning: Model evaluation is not just about building
+          algorithms. Comparing results against a baseline helps identify
+          whether machine learning actually adds predictive value.
+        </p>
+
+        <h4>🧰 Technology Stack</h4>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+          <span>Scikit-learn</span>
+          <span>XGBoost</span>
+          <span>Jupyter Notebook</span>
+        </div>
+
+        <h4>🚀 Future Improvements</h4>
+        <p>
+          Explore larger real-world datasets, incorporate historical
+          delay information, route distance, vehicle details, and
+          real-time traffic and weather data to improve model performance.
+        </p>
+
+        <p>
+          👨‍💻 <strong>Author:</strong> Vedant Patil
+        </p>
+
+        <p>
+          🔗 <a href="https://github.com/vedanthpatil1706/public-transport-delay-prediction"
+             target="_blank" rel="noopener noreferrer">
+             View Project on GitHub
+          </a>
+        </p>
+
       </article>
 
+
+      <!-- PROJECT 3: SMART INDOOR AIR QUALITY -->
       <article class="project">
-        <h3>Smart Home Automation (Gesture)</h3>
-        <p><strong>Stack:</strong> Arduino Nano 33 BLE Sense (accelerometer)</p>
-        <p>Implemented gesture-based controls for home appliances (swipe/rotate/fist gestures) using onboard sensors and mapping gestures to device actions.</p>
+
+        <h3>🌡️ Smart Indoor Air Quality Sensor</h3>
+
+        <p><strong>Technology Stack:</strong> ESP32, Sensors, Cloud Dashboard</p>
+
+        <p>
+          Developed a real-time indoor air quality monitoring system
+          using ESP32. Sensor data, including CO₂, temperature, and
+          humidity, is transmitted to a cloud dashboard for monitoring
+          and visualization.
+        </p>
+
       </article>
 
+
+      <!-- PROJECT 4: SMART HOME AUTOMATION -->
       <article class="project">
-        <h3>Women Safety App (Smart India Hackathon)</h3>
-        <p><strong>Role:</strong> Team participant</p>
-        <p>Contributed to design and prototype of a women-safety mobile/web application including alerting features and location sharing.</p>
+
+        <h3>🏠 Smart Home Automation — Gesture Recognition</h3>
+
+        <p>
+          <strong>Technology Stack:</strong>
+          Arduino Nano 33 BLE Sense, Machine Learning, Edge Impulse
+        </p>
+
+        <p>
+          Developed a gesture-based smart home automation system
+          using machine learning and onboard motion sensors.
+          Recognizes hand gestures and maps them to appliance
+          control actions on an edge device.
+        </p>
+
       </article>
+
+
+      <!-- PROJECT 5: WOMEN SAFETY APP -->
+      <article class="project">
+
+        <h3>🛡️ Women Safety App — Smart India Hackathon</h3>
+
+        <p><strong>Role:</strong> Team Participant</p>
+
+        <p>
+          Contributed to the design and development of a women-safety
+          application prototype featuring emergency alert functionality
+          and location-sharing capabilities to support personal safety.
+        </p>
+
+      </article>
+
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year3"></span> Vedant Patil</p>
+      <p>
+        © <span id="year3"></span> Vedant Patil •
+        <a href="mailto:vedantrpatil701@gmail.com">
+          vedantrpatil701@gmail.com
+        </a>
+      </p>
     </div>
   </footer>
 
-<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year3').textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
