@@ -105,11 +105,13 @@ body {
   gap: 16px;
 }
 
+
 .profile-img img {
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
   object-fit: cover;
+  object-position: center;
   border: 3px solid transparent;
   background: linear-gradient(white, white) padding-box,
               var(--gradient) border-box;
@@ -118,7 +120,7 @@ body {
 }
 
 .profile-img img:hover {
-  transform: scale(1.08) rotate(3deg);
+  transform: scale(1.04);
 }
 
 /* NAVIGATION */
